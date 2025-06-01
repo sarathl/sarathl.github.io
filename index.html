@@ -1,1 +1,105 @@
-"dlorW olleH" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-P">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="name">Sarath Lavu</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#career">Career</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="container section">
+        <h2>About</h2>
+        <p>Hey! This is Sarath. I majored in Economics with a minor in Machine Learning from IIT Kanpur and have been working as a Data Scientist since 2021.</p>
+        <p>I'm interested in all things data, game theory and sometimes behavioural economics. I also follow cricket and politics apart from watching sitcoms.</p>
+        <p>You can find me at <a href="https://www.linkedin.com/in/sarath-lavu/" target="_blank" rel="noopener noreferrer">LinkedIn</a> and <a href="https://github.com/sarathl" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    </section>
+
+    <section id="projects" class="container section">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <details>
+                <summary>
+                    <h3><a href="https://dontaskcricinfo.streamlit.app/" target="_blank" rel="noopener noreferrer">Ask IPL Stats</a> - A question answering system for IPL data</h3>
+                    <p>Built an end-to-end text to SQL pipeline for IPL statistics data using LLMs. Ask any question about IPL statistics in english and get the relevant data.</p>
+                </summary>
+                <ul>
+                    <li>Developed ETL pipelines to get ball by ball IPL data from <a href="https://cricsheet.org/downloads/" target="_blank" rel="noopener noreferrer">cricsheet</a>, cricinfo API and parse the data.</li>
+                    <li>Implemented a classifier model to filter out unrelated questions before passing to LLM.</li>
+                    <li>Built a natural language to sql pipeline using Gemini LLMs to convert the relevant questions into sql queries and fetch the data.</li>
+                    <li>Optimized the pipeline using caching to reduce the repeated calls to the LLM for similar questions.</li>
+                    <li>Enhanced the pipeline by adding NER tagging to extract the player/team names from the questions thereby fetching the relevant data for questions with imperfect names.</li>
+                </ul>
+            </details>
+        </div>
+
+    </section>
+
+    <section id="career" class="container section">
+        <h2>Career</h2>
+        <p class="resume-link">My resume is available <a href="https://drive.google.com/file/d/1OZotGKroBNhAf_ORDGLqQuiSVynAwnJ3/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.</p>
+        <div class="job">
+            <details>
+                <summary>
+                    <div class="job-header">
+                        <h3>Arcana Analytics</h3>
+                        <p class="job-dates-location">April 2024 - Present | Bangalore, India</p>
+                    </div>
+                    <p class="job-title">Data Scientist</p>
+                    <p class="job-summary-tech"><em>Building equity risk models. I work on sentiment analysis of financial reports, run regression models to decompose stock returns using Python, Airflow, and GCP.</em></p>
+                </summary>
+                <ul>
+                    <li>Developed custom sentiment analysis factors for financial reports leveraging machine learning algorithms and FinBERT.</li>
+                    <li>Built a cross-sectional regression model enabling institutional investors to decompose stock returns and analyze portfolio risks. Implemented orthogonalization, winsorization to handle potential issues in the regression.</li>
+                    <li>Orchestrated end-to-end ETL pipelines using Airflow DAGs and GCP to process risk model data ensuring reliable and timely updates for 10+ production models.</li>
+                    <li>Integrated currency risk factors into global equity model, with relevant currencies having statistical significance of 90% in explaining the returns.</li>
+                    <li>Optimized codebase through parameterization, reducing the new model development cycle time to few weeks.</li>
+                </ul>
+            </details>
+        </div>
+
+        <div class="job">
+            <details>
+                <summary>
+                    <div class="job-header">
+                        <h3>HiLabs</h3>
+                        <p class="job-dates-location">June 2021 - March 2024 | Bangalore, India</p>
+                    </div>
+                    <p class="job-title">Data Scientist</p>
+                    <p class="job-summary-tech"><em>Built machine learning models and developed ETL pipelines for healthcare provider data automation using Python, PySpark, AWS and some LLMs.</em></p>
+                </summary>
+                <ul>
+                    <li>Developed an automated data visualization system using LLMs, enabling senior management to generate custom reports through simple text queries, with the solution deployed on AWS Sagemaker.</li>
+                    <li>Implemented a multi-class classifier achieving 98% accuracy in raw column mapping, streamlining data processing workflow.</li>
+                    <li>Enhanced data processing pipeline efficiency by up to 3x through implementation of optimized pandas operations and targeted performance tuning.</li>
+                    <li>Automated healthcare data extraction system reducing manual processing time by 40% through robust ETL pipeline design.</li>
+                    <li>Built a healthcare webpage credibility classifier to identify trusted webpages achieving 90% F1 score using LightGBM and feature engineering.</li>
+                </ul>
+            </details>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sarath Lavu</p>
+            <div class="footer-links">
+                 <a href="https://www.linkedin.com/in/sarath-lavu/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+                 <a href="https://github.com/sarathl" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

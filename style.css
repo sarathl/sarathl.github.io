@@ -1,0 +1,238 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden; /* Clear floats */
+}
+
+header {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+header .name {
+    float: left;
+    font-size: 2em; /* Approximation from image */
+    color: #2c3e50; /* Dark blue/grey from image */
+    margin: 0;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+    margin-top: 10px; /* To align better with name */
+    float: left; /* Keep items on one line */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #3498db; /* Blue color from image */
+    font-size: 1.1em;
+}
+
+.section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.section h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Project Section Styling */
+.project {
+    margin-bottom: 30px; /* Adds space between projects */
+    border: 1px solid #ddd; /* Optional: adds a light border around each project */
+    border-radius: 5px; /* Optional: rounds the corners of the border */
+    padding: 15px;
+}
+
+.project details summary {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for the summary */
+    border-radius: 3px;
+    outline: none; /* Removes the default focus outline which can be distracting */
+    display: block; /* Added: Ensures summary takes full width for clicking, consistent with .job */
+}
+
+.project details summary h3 {
+    margin: 0 0 5px 0; /* Adjust spacing for the headline within summary */
+    color: #333; /* Ensure headline color is consistent */
+    font-size: 1.4em;
+}
+
+.project details summary p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1em;
+    color: #555;
+}
+
+.project details[open] summary {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.project details ul {
+    list-style-type: disc; /* Or 'circle', 'square', etc. */
+    margin-left: 20px; /* Indent the list items */
+    padding-left: 20px; /* Add padding for the list itself */
+    margin-top: 10px;
+}
+
+.project details ul li {
+    margin-bottom: 8px; /* Space out list items */
+    line-height: 1.6;
+}
+
+/* Optional: Style the default arrow/marker for details/summary */
+.project details summary::marker {
+    /* You can try to style this, but browser support varies. */
+    /* For more control, you might hide it and use a custom pseudo-element. */
+}
+
+.project details summary:hover {
+    background-color: #f0f0f0; /* Slight hover effect for summary */
+}
+
+/* Career Section Styling */
+.job {
+    margin-bottom: 30px;
+}
+
+.job-header {
+    display: flex; /* Aligns company name and dates on the same line */
+    justify-content: space-between; /* Pushes company name to left, dates to right */
+    align-items: baseline; /* Aligns them nicely on their baselines */
+    margin-bottom: 5px;
+}
+
+.job-header h3 {
+    margin: 0;
+    color: #2c3e50; /* Same as section titles for consistency */
+    font-size: 1.5em;
+}
+
+.job-title {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.job ul {
+    list-style-type: circle; /* Using circles as per the image */
+    margin-left: 20px;
+    padding-left: 15px;
+}
+
+.job ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #444; /* Slightly lighter than main text for bullets */
+}
+
+.job details summary {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for the summary */
+    border-radius: 3px;
+    outline: none; /* Removes the default focus outline */
+    display: block; /* Ensures summary takes full width for clicking */
+}
+
+.job details summary:hover {
+    background-color: #f0f0f0; /* Slight hover effect */
+}
+
+.job details[open] summary {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+/* Adjustments for job-header and job-title within summary */
+.job details summary .job-header h3 {
+    font-size: 1.3em; /* Slightly smaller if needed inside summary */
+}
+
+.job details summary .job-title {
+    font-size: 1.0em; /* Slightly smaller if needed inside summary */
+    margin-bottom: 0; /* Remove bottom margin if it's the last item in summary */
+}
+
+/* Ensure list styling is consistent */
+.job details ul {
+    list-style-type: circle;
+    margin-left: 20px;
+    padding-left: 15px;
+    margin-top: 10px; /* Add some space above the list when open */
+}
+
+.job details ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.job details summary .job-summary-tech {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px; /* Add a little space above this line */
+    margin-bottom: 0; /* Remove bottom margin if it's the last item in summary */
+    font-style: italic;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #fff; /* White color to match the footer text */
+    text-decoration: none;
+    margin: 0 10px; /* Space out the links */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.resume-link {
+    margin-top: 5px;
+    margin-bottom: 20px; /* Add some space before the first job entry */
+    font-size: 1em;
+}
+
+.resume-link a {
+    color: #3498db; /* Using the same blue as header links */
+    text-decoration: none;
+}
+
+.resume-link a:hover {
+    text-decoration: underline;
+} 

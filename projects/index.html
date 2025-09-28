@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sarath Lavu</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="name">Sarath Lavu</h1>
+            <nav>
+                <ul>
+                    <li><a href="/\#about">About</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/\#career">Career</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container section">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <details>
+                <summary>
+                    <h3><a href="https://dontaskcricinfo.streamlit.app/" target="_blank" rel="noopener noreferrer">Ask IPL Stats</a> - A question answering system for IPL data</h3>
+                    <p>Built an end-to-end text to SQL pipeline for IPL statistics data using LLMs. Ask any question about IPL statistics in english and get the relevant data.</p>
+                </summary>
+                <ul>
+                    <li>Developed ETL pipelines to get ball by ball IPL data from <a href="https://cricsheet.org/downloads/" target="_blank" rel="noopener noreferrer">cricsheet</a>, cricinfo API and parse the data.</li>
+                    <li>Implemented a classifier model to filter out unrelated questions before passing to LLM.</li>
+                    <li>Built a natural language to sql pipeline using Gemini LLMs to convert the relevant questions into sql queries and fetch the data.</li>
+                    <li>Optimized the pipeline using caching to reduce the repeated calls to the LLM for similar questions.</li>
+                    <li>Enhanced the pipeline by adding NER tagging to extract the player/team names from the questions thereby fetching the relevant data for questions with imperfect names.</li>
+                </ul>
+            </details>
+        </div>
+
+        <h3>Project folders</h3>
+        <ul>
+            <li><a href="/projects/ap_place_names_suffixes/">ap_place_names_suffixes</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sarath Lavu</p>
+            <div class="footer-links">
+                 <a href="https://www.linkedin.com/in/sarath-lavu/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+                 <a href="https://github.com/sarathl" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
